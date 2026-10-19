@@ -1,0 +1,62 @@
+{
+    "name":"OAuth2 Providers",
+    "slug":"oauth2-providers",
+    "version":"2.2.0",
+    "author":"Sahil Shingate <sahilshingate0@gmail.com>",
+    "location":"sahilshingate01/Oauth#v2.2.0",
+    "directory":"",
+    "createPackageDirectory":"true",
+    "homepage":"https://github.com/sahilshingate01/Oauth",
+    "documentation":"https://github.com/sahilshingate01/Oauth",
+    "type":"projects",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/sahilshingate01/Oauth.git"
+    },
+    "bugs":"https://github.com/sahilshingate01/Oauth/issues",
+    "shortDescription":"A unified client to interact with OAuth2 providers",
+    "keywords":[
+        "oauth2",
+        "api"
+    ],
+    "scripts":{
+        "postVersion":"package set location='sahilshingate01/Oauth#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    },
+    "private":"false",
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "testbox":{
+        "runner":"http://127.0.0.1:50750/tests/runner.cfm",
+        "labels":[],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[],
+        "notify":{
+            "emails":[],
+            "growl":"",
+            "URL":""
+        }
+    },
+    "dependencies":{
+        "pkce":"^1.0.0"
+    },
+    "devDependencies":{
+        "testbox":"^4.5.0+5"
+    },
+    "installPaths":{
+        "testbox":"testbox/",
+        "pkce":"utils/deps/pkce/"
+    }
+}
